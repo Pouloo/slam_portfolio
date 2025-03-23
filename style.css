@@ -1,0 +1,119 @@
+/* General */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+p
+{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: justify;
+    color: #555555;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+header, section, footer
+{
+    height: auto;
+    width: 90%;
+    margin: 30px;
+}
+
+/* Header */
+
+header ul
+{
+    margin: 20px;
+    font-size: 0; /* Contre propriété inline block de padding inmodifiable de 6 px */
+}
+
+header ul li
+{
+    display: inline;
+}
+
+header a
+{
+    font-size: 25px;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+    border-color: #000000;
+    padding: 15px 15px 15px 15px;
+}
+
+header a:hover
+{
+    font-family: Courier;
+	/* width: ; */
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header\Hamburger Menu */
+
+.burger
+{
+    font-size: 25px;
+}
+
+.sub_burger
+{
+    display: none;
+    box-shadow: 0px;
+}
+
+/* Section 1 */
+
+#s1
+{
+	font-size: 25px;
+}
+
+/* Section 2 */
+
+#s2
+{
+	font-size: 25px;
+}
+
+/* Section 3 */
+
+#s3
+{
+	font-size: 25px;
+}
+
+/* Footer */
+
+footer p
+{
+    font-size: 10px;
+}
