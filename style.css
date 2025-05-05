@@ -1,3 +1,17 @@
+/* 
+=> Acueil
+=> Profil
+=> En tête (/= Hamburger Menu):
+    ↳ À Propos de moi
+    ↳ BTS SIO
+    ↳ Experience
+    ↳ Compétences
+    ↳ Projets
+    ↳ Contacts
+    ↳ E4
+    ↳ E5
+*/
+
 /* General */
 
 *
@@ -66,7 +80,13 @@ header a
     border-style: solid;
     border-width: 1px 0px 1px 1px;
     border-color: #000000;
+    border-radius: 1;
     padding: 15px 15px 15px 15px;
+}
+
+header a:nth-child(2)
+{
+    border-right: 1px;
 }
 
 header a:hover
@@ -79,18 +99,8 @@ header a:hover
 
 /* Header\Hamburger Menu */
 
-.burger
-{
-    font-size: 25px;
-}
 
-.sub_burger
-{
-    display: none;
-    box-shadow: 0px;
-}
-
-/* Section 1 */
+/* À Propos de moi */
 
 #s1
 {
