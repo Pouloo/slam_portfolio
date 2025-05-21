@@ -1,30 +1,39 @@
-/* 
+/*
 TODO:
-
-    ( Maintain ul:hover status during li:hover trigger
-
-    ( Side links to sub_burge li to simply ref in-page id
-
-    ( Highlight/Grey Out Current page >>Header
-
-    ( Implement Alternate color for sections and footer
 
     • Fathom the glorious Hamburger Menu (~✓)
 
     • CSS\ (Temp) Style Accueil/Header (✓)
 
-    • HTML\ Implement Sub Pages/Hreffing/Iding (~)
+    • HTML\ Implement Sub Pages/Hreffing/Iding (✓)
+    
+    • HTML\ Add Pages Content (~)
 
-    • HTML\ Add Accueil Content
+    • HTML\ Add Accueil Content =>> Overview ; Ressources
 
-    • HTML\ Add Pages Content
+    |||- HTML\ Check Typos
 
-    • CSS\ Style Accueil
+    • HTML/CSS\ Implement Obligatory Improvements
 
-    • CSS\ Style Sub Pages
+        => Add highligh/mark tags on key phrases || style
+
+        => Implement Alternate color for sections and footer
+
+        => Tab Icon
+
+        => Images In-Page Icon
+
+    • CSS\ Implement Misc Ideas
+
+        ( Headings :before "↳" content + Padding => Show Ramification
+
+        ( Maintain ul:hover status during li:hover trigger
+
+        ( Side links to sub_burge li to simply ref in-page id
+
+        ( Highlight/Grey Out Current page >>Header
 
     • (......)
-
 */
 
 /* General */
@@ -35,7 +44,6 @@ TODO:
     padding: 0;
 }
 
-
 body
 {
     height: auto;
@@ -43,6 +51,9 @@ body
 }
 p
 {
+    /* width: 50%; */
+    margin: 25px;
+    /* display: block; */
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: normal;
@@ -58,8 +69,14 @@ h1
 }
 h2
 {
+    font-size: 30px;
+    text-align: justify;
+}
+h3
+{
     font-size: 25px;
     text-align: justify;
+    padding-left: 25px;
 }
 a
 {
@@ -71,18 +88,31 @@ hr
 {
     border: 1.5px solid grey;
 }
+ul
+{
+    list-style-type: none;
+}
 
 h1, h2, h3
 {
+    margin: 25px;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 25px;
     color: black;
 }
 section, footer
 {
     height: auto;
-    width: 90%;
-    margin: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+    width: 100%;
+    border-bottom: 2px solid black;
 }
 
 /* Header/Hamburger Menu */
@@ -95,10 +125,6 @@ header
     position: sticky;
     top: 0px
 }
-header ul
-{
-    list-style-type: none;;
-}
 header ul li
 {
     float: left;
@@ -108,28 +134,29 @@ header ul li
 }
 header a
 {
+    border: 2px solid black;
+    border-right: 1.5px solid black;
+    border-left: 1.5px solid black;
     display: block;
+    position: relative;
     text-decoration: none;
     color: black;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    padding: 10px 0px
+    padding: 8px 5px
 }
 
-
-.alt_sec
-{
-    background-color: grey;
-}
 .sub_burger
 {
     display: none;
-    box-shadow: 0px 1px 2px lightgrey;
     background-color: grey;
     position: absolute;
     width: 100%;
     z-index: 1000;
+}
+.sub_burger a
+{
+    border: 2px solid black;
+    padding: 10px;
+    border-top: none;
 }
 .sub_burger li
 {
@@ -137,13 +164,6 @@ header a
     width: 100%;
     text-align: left;
 }
-.sub_burger a
-{
-    border-right: 2px solid black;
-    padding: 10px;
-    border-top: none;
-}
-
 
 header a:hover
 {
@@ -170,10 +190,28 @@ header ul::after
     font-size: 12px;
 }
 
-
 /* Footer/Contacts */
 
 footer p
 {
     font-size: 10px;
+}
+
+/* Profil */
+
+section ul
+{
+    float: left;
+    width: 100%;
+}
+
+section ul li
+{
+    float: left;
+    width: 20%;
+    height: 200px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    /* position: relative; */
 }
