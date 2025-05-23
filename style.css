@@ -5,39 +5,40 @@ TODO:
 
     • CSS\ (Temp) Style Accueil/Header (✓)
 
-    • HTML\ Implement Sub Pages/Hreffing/Iding (✓)
+    • HTML/CSS\ Implement Sub Pages/Hreffing/Iding (✓)
     
-    • HTML\ Add Profil Content (~) </ 21/05 | 22h00
+    • HTML/CSS\ Add Profil Content (~)
 
-    • HTML\ Add Accueil Content </ 21/05 | 22h00
+    • HTML/CSS\ Add Accueil Content (~)
 
         =>> Overview ; Ressources ; Meta-Page
 
-    • HTML\ Add Formation Content
+    • HTML/CSS\ Add Formation Content
 
-    • HTML\ Add Autre Content
+    • HTML/CSS\ Add Autre Content
 
     |||- HTML\ Check Typos
 
     • HTML/CSS\ Implement Obligatory Improvements
 
-        => Add highligh/mark tags on key phrases || style
+        => Add highligh/mark tags on key phrases
 
-        => Implement Alternate color for sections and footer
+        => Implement Alternate color for sections
 
         => Tab Icon
 
         => Images In-Page Icon
 
-    • CSS\ Implement Misc Ideas
+    • CSS\ Implement Misc/Optional Ideas
 
-        ( Headings :before "↳" content + Padding => Show Ramification
 
         ( Maintain ul:hover status during li:hover trigger
 
         ( Side links to sub_burge li to simply ref in-page id
 
         ( Highlight/Grey Out Current page >>Header
+
+        ( Implement footer for every page
 
     • (......)
 */
@@ -57,16 +58,14 @@ body
 }
 section
 {
-    height: auto;
-    width: 80%;
+    width: 1000px;
     margin: 0px auto;
     padding: 0px auto;
-    overflow: scroll;
+    overflow: auto;
 }
 p
 {
-    float: left;
-    width: 50%;
+    margin: 30px 0;
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: normal;
@@ -79,6 +78,12 @@ h1
 {
     font-size: 50px;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+    width: 100%;
+    border-top: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
 }
 h2
 {
@@ -105,26 +110,42 @@ ul
 {
     list-style-type: none;
 }
+b
+{
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
 
+h2, h3
+{
+    margin: 30px 0;
+}
 h1, h2, h3
 {
-    margin: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
-
-.tab
+header + h1
 {
-    margin-left: 40px;
+    border-top: none;
+}
+h3 + p
+{
+    padding-left: 25px;
+}
+h3::before
+{
+    content:"↳ ";
+    font-size: 25px;
 }
 
-h1.h1_bg
+p.p_para
 {
-    margin: 0px;
-    padding: 0px;
-    background-color: grey;
-    width: 100%;
-    border-bottom: 0.2vw solid black;
+    float: left;
+    width: 50%;
 }
 
 /* Header/Hamburger Menu */
@@ -146,7 +167,7 @@ header ul li
 }
 header a
 {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     border: 0.2vw solid black;
     border-right: 0.075vw solid black;
     border-left: 0.075vw solid black;
@@ -201,13 +222,6 @@ header ul::after
 {
     content:" ▼";
     font-size: 1.25vw;
-}
-
-/* Footer/Contacts */
-
-footer p
-{
-    font-size: 10px;
 }
 
 /* Profil */
