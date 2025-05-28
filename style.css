@@ -15,6 +15,22 @@ TODO:
 
     • HTML/CSS\ Add Autre Content (✓)
 
+    • HTML/CSS\Content\
+
+        - Formation\Débouchés
+
+        - Autres\Veille Technologique
+
+        - Experience\Certificats
+
+        - Experience\{Distinguo}
+        
+            => Experience General/TH
+
+            => Experience Pratique/EMP/Projets
+
+        - Compétences\OSs
+
     • CSS\  Ideas
 
         ( Add highligh/mark tags on key phrases
@@ -60,6 +76,7 @@ footer
     background-color: grey;
     border-top: 0.2vw solid black;
     margin-top: 50px;
+    clear: both;
 }
 p
 {
@@ -131,6 +148,11 @@ h3::before
 {
     content:"↳ ";
     font-size: 25px;
+}
+*::selection
+{
+    color: white;
+    background-color: black;
 }
 
 span.comment
@@ -259,21 +281,21 @@ div.chrono
     padding-left: 10px;
 }
 
-ul.lang
+ul.comp
 {
     height: 120px;
 }
-ul.lang li
+ul.comp li
 {
     float: left;
     border: 0.2vw solid black;
     background-color: lightslategrey;
     border-radius: 10px;
-    width: 14%;
+    width: 140px;
     height: 100px;
     margin: 10px;
 }
-ul.lang li p
+ul.comp li p
 {
     border-radius: 10px 10px 0 0;
     text-align: center;
@@ -282,57 +304,76 @@ ul.lang li p
     font-size: 20px;
     border-bottom: 0.2vw solid black;
 }
-ul.lang li:hover
+ul.comp li:hover
 {
     background-color: black;
 }
 
-ul.lang li:hover p
+ul.comp li:hover p
 {
     color: lightgrey;
     background-color: black;
 }
-ul.lang li img
+ul.comp li img
 {
     width: 45%;
     margin: 2px 39px;
 }
-ul.lang :nth-child(3) p
+ul.comp :nth-child(3) p
 {
     font-size: 15px;
     padding: 2.5px;
 }
-ul.lang :nth-child(3) img[src="../images/sh.png"]
+ul.comp :nth-child(3) img[src="../images/sh.png"]
 {
     margin: 5px 0px 5px 5px;
     float: left;
 }
-ul.lang :nth-child(3) img[src="../images/posh.png"]
+ul.comp :nth-child(3) img[src="../images/posh.png"]
 {
     width: 42%;
     margin: 7px 8px 5px 0px;
     float: right;
 }
-ul.lang :nth-child(4) img
+ul.comp :nth-child(4) img
 {
     margin-top: 8px;
 }
-ul.lang :nth-child(5) img[src="../images/html.png"]
+ul.comp :nth-child(5) img[src="../images/html.png"]
 {
     width: 50%;
     margin: 0;
     float: left;
 }
-ul.lang :nth-child(5) img[src="../images/css.png"]
+ul.comp :nth-child(5) img[src="../images/css.png"]
 {
     margin: 5px 5px 5px 0px;
     float: right;
 }
-ul.lang :nth-child(6) img
+ul.comp :nth-child(6) img
 {
     width: 60%;
     margin: 2px 29px;
     margin-top: 8px;
+}
+h3#os + ul.comp
+{
+    float: left;
+    width: 350px;
+    margin-bottom: 25px;
+}
+h3#os + ul.comp li
+{
+    width: 140px;
+}
+h3#os + ul.comp li img[src="../images/windows.png"]
+{
+    width: 50%;
+    margin-left: 36px;
+}
+p.os
+{
+    float: left
 }
 p.p2
 {
@@ -444,14 +485,58 @@ ul.tool :nth-child(4) p
 
 p.p4
 {
+    float: left;
+    margin-top: 0px;
+    margin-right: 20px;
     border: 2px solid rgb(0, 0, 0);
     padding: 10px;
-    width: 67%;
+    width: 35%;
     border-radius: 10px;
     background-color: lightslategrey;
+}
+form.f1
+{
+    float: right;
+    margin-top: 0px;
+    margin-right: 205px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    width: 35%;
+    border-radius: 10px;
+    background-color: lightslategrey;
+    margin-left: 0px;
+}
+
+form.f1 input, textarea
+{
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+form.f1 textarea
+{
+    height: 100px;
+}
+form.f1 input[type="submit"]
+{
+    height: 30px;
+    width: 50%;
+}
+
+form.f1 input[type="submit"]:hover
+{
+    background-color: black;
+    color: lightgrey;
 }
 
 span.emoji
 {
-    font-size: 25px;
+    background-color: grey;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 40px;
 }
