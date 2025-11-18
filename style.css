@@ -167,16 +167,17 @@ ul.sub_burger li
 
 header a:hover
 {
-    background-color: black;
-    color: lightgrey;
-}
-li.burger > a:hover
-{
-    background-color: grey;
+    animation-name: burger_element_fade;
+    animation-duration: 0.40s;
+    animation-fill-mode: forwards;
 }
 header > ul li:hover ul.sub_burger
 {
     display: block;
+
+    animation-name: burger_fade;
+    animation-duration: 0.40s;
+    animation-fill-mode: forwards;
 }
 header ul::after
 {
@@ -485,4 +486,41 @@ span.emoji
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
     font-size: 40px;
+}
+
+/* Keyframes/Animations */
+
+@keyframes burger_fade
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes burger_element_fade
+{
+    0%
+    {
+        background-color: grey;
+        color: black;
+    }
+    50%
+    {
+        background-color: black;
+        color: lightgrey;
+    }
+    100%
+    {
+        background-color: grey;
+        color: black;        
+    }
 }
