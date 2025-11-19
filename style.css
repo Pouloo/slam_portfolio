@@ -140,7 +140,11 @@ header a
     position: relative;
     text-decoration: none;
     color: black;
-    padding: 8px 5px
+    padding: 8px 5px;
+
+    background-color: grey;
+    color: black;
+    transition: background-color 0.5s ease;
 }
 
 ul.sub_burger
@@ -157,6 +161,10 @@ ul.sub_burger a
     border: 0.2vw solid black;
     padding: 10px;
     border-top: none;
+
+    background-color: grey;
+    color: black;
+    transition: background-color 0.5s ease;
 }
 ul.sub_burger li
 {
@@ -167,17 +175,13 @@ ul.sub_burger li
 
 header a:hover
 {
-    animation-name: burger_element_fade;
-    animation-duration: 0.40s;
-    animation-fill-mode: forwards;
+    background-color: black;
+    color: lightgrey;
 }
 header > ul li:hover ul.sub_burger
 {
     display: block;
-
-    animation-name: burger_fade;
-    animation-duration: 0.40s;
-    animation-fill-mode: forwards;
+    /* transition: opacity 0.5s ease; */
 }
 header ul::after
 {
@@ -200,6 +204,9 @@ p.p0
     width: 40%;
     border-radius: 10px;
     background-color: lightslategrey;
+
+    animation-name: bounce;
+    animation-duration: 1s;
 }
 
 /* Profil */
@@ -490,37 +497,14 @@ span.emoji
 
 /* Keyframes/Animations */
 
-@keyframes burger_fade
+/* @keyframes bounce
 {
     0%
     {
         opacity: 0;
     }
-    50%
+    100%
     {
         opacity: 1;
     }
-    100%
-    {
-        opacity: 0;
-    }
-}
-
-@keyframes burger_element_fade
-{
-    0%
-    {
-        background-color: grey;
-        color: black;
-    }
-    50%
-    {
-        background-color: black;
-        color: lightgrey;
-    }
-    100%
-    {
-        background-color: grey;
-        color: black;        
-    }
-}
+} */
