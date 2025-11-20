@@ -111,6 +111,10 @@ span.comment
     color: lightgrey;
     border-radius: 10px;
     padding: 2px;
+    display: inline-block;
+
+    transform-origin: top center;
+    animation: shake 2s ease infinite;
 }
 
 /* Header/Hamburger Menu */
@@ -121,7 +125,8 @@ header
     margin: 0 auto;
     background-color: grey;
     position: sticky;
-    top: 0px
+    top: 0px;
+    z-index: 1;
 }
 header ul li
 {
@@ -181,7 +186,7 @@ header a:hover
 header > ul li:hover ul.sub_burger
 {
     display: block;
-    /* transition: opacity 0.5s ease; */
+    animation: burger_pop 0.25s ease forwards;
 }
 header ul::after
 {
@@ -197,6 +202,15 @@ li.burger > a::after
 
 /* Accueil */
 
+h2.welcome
+{
+	margin-top: 100px;
+    font-size: 150px;
+    text-align: center;
+
+    animation: bounce-in-right 2s, pretty-title 3s ease;
+}
+
 p.p0
 {
     border: 2px solid rgb(0, 0, 0);
@@ -204,9 +218,6 @@ p.p0
     width: 40%;
     border-radius: 10px;
     background-color: lightslategrey;
-
-    animation-name: bounce;
-    animation-duration: 1s;
 }
 
 /* Profil */
@@ -497,7 +508,7 @@ span.emoji
 
 /* Keyframes/Animations */
 
-/* @keyframes bounce
+@keyframes burger-in
 {
     0%
     {
@@ -507,4 +518,93 @@ span.emoji
     {
         opacity: 1;
     }
-} */
+}
+
+@keyframes pretty-title
+{
+	0%
+	{
+		color: rgb(0, 0, 255);
+	}
+	20%
+	{
+		color: rgb(0, 255, 255);
+	}
+	40%
+	{
+		color: rgb(0, 255, 0);
+	}
+	60%
+	{		
+		color: rgb(255, 255, 0);
+	}
+	60%
+	{
+		color: rgb(255, 0, 0);
+	}
+	100%
+	{
+		color: rgb(0, 0, 0);
+	}
+}
+
+@keyframes bounce
+{
+	20% 
+    {
+        transform: rotate(15deg);
+    }	
+	40%
+    { 
+        transform: rotate(-10deg);
+    }
+	60%
+    {
+        transform: rotate(5deg);
+    }	
+	80%
+    {
+        transform: rotate(-5deg);
+    }	
+	100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shake
+{
+	0%, 100% 
+    {
+        transform: translateX(0);
+    }
+	10%, 30%, 50%, 70%, 90%
+    {
+        transform: translateX(-2px);
+    }
+	20%, 40%, 60%, 80% 
+    {
+        transform: translateX(2px);
+    }
+}
+
+@keyframes bounce-in-right {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60%
+    {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80%
+    {
+        transform: translateX(10px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
