@@ -14,7 +14,7 @@ body
 }
 section
 {
-    width: 1000px;
+    width: 1200px;
     margin: 0px auto;
 }
 footer
@@ -259,9 +259,13 @@ ul.comp li
     border: 0.2vw solid black;
     background-color: lightslategrey;
     border-radius: 10px;
-    width: 140px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     margin: 10px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 ul.comp li p
 {
@@ -270,21 +274,24 @@ ul.comp li p
     margin: 0;
     font-size: 20px;
     border-bottom: 0.2vw solid black;
+    background-color: transparent;
 }
 ul.comp li:hover
 {
     background-color: black;
+
+    transition: background-color 0.5s ease;
 }
 
 ul.comp li:hover p
 {
     color: lightgrey;
-    background-color: black;
+    /* transition: color 0.5s ease; */
 }
 ul.comp li img
 {
     width: 45%;
-    margin: 2px 39px;
+    vertical-align: middle;
 }
 ul.comp :nth-child(3) p
 {
