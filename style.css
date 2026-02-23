@@ -1,5 +1,31 @@
 /* General/Default */
 
+/* div.test2
+{
+    position: relative;
+    background-color: blue;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+div.test
+{
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1000;
+} */
+
 *
 {
     margin: 0;
@@ -108,7 +134,7 @@ span.comment
     display: inline-block;
 
     transform-origin: top center;
-    animation: shake 2s ease infinite;
+    animation: shake 2s infinite;
 }
 
 div.sub_bg
@@ -144,7 +170,7 @@ footer a
 /* footer a:hover */
 /* { */
     /* transform: translateX(10); */
-    /* transition: transform 0.5s ease; */
+    /* transition: transform 0.5s ; */
 /* } */
 
 /* Header/Hamburger Menu */
@@ -178,7 +204,7 @@ header a
 
     background-color: grey;
     color: black;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s;
 }
 
 ul.sub_burger
@@ -214,8 +240,8 @@ header a:hover
 header > ul li:hover ul.sub_burger
 {
     display: block;
-    /* transition: background-color 0.25s ease; */
-    animation: burger-fade 0.25s ease forwards;
+    /* transition: background-color 0.25s; */
+    animation: burger-fade 0.25s forwards;
 }
 header ul::after
 {
@@ -237,7 +263,7 @@ h2.welcome
     font-size: 125px;
     text-align: center;
 
-    animation: bounce-in-right 2s, pretty-text 3s ease;
+    animation: bounce-in-right 2s forwards, pretty-text 3s;
 }
 h2.welcome2
 {
@@ -247,7 +273,7 @@ h2.welcome2
     font-weight: bold;
     opacity: 0;
 
-    animation: bounce-in-left 2s forwards, pretty-text 3s ease;
+    animation: bounce-in-left 2s forwards, pretty-text 3s;
     animation-delay: 1s;
 }
 
