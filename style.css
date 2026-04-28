@@ -1,5 +1,7 @@
 /* General/Default */
 
+/* Contient L'ensemble des selecteurs usuels et/ou par défaut ne se rapportant à aucune section spécifique */
+
 /* div.test2
 {
     position: relative;
@@ -36,7 +38,7 @@ body
 {
     width: 100%;
     height: 100%;
-    background-color: lightgrey;
+    background-color: #E6D5B8;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -54,7 +56,7 @@ p
     font-size: 20px;
     text-decoration: none;
     text-align: justify;
-    color: black;
+    color: #212121;
 }
 h1
 {
@@ -62,10 +64,10 @@ h1
     text-align: center;
     margin: 0px;
     padding-top: 5px;
-    background-color: grey;
+    background-color: #D2C1A5;
     width: 100%;
-    border-top: 0.2vw solid black;
-    border-bottom: 0.2vw solid black;
+    border-top: 0.2vw solid #666666;
+    border-bottom: 0.2vw solid #666666;
 }
 h2
 {
@@ -81,11 +83,11 @@ h3
 a
 {
     text-decoration: none;
-    color: black;
+    color: #212121;
 }
 hr
 {
-    border: 0.1vw solid grey;
+    border: 0.1vw solid #666666;
 }
 ul
 {
@@ -103,7 +105,7 @@ h2, h3
 }
 h1, h2, h3
 {
-    color: black;
+    color: #181818;;
 }
 header + h1
 {
@@ -127,8 +129,8 @@ h3::before
 span.comment
 {
     font-weight: normal;
-    background-color: black;
-    color: lightgrey;
+    background-color: #666666;
+    color: #212121;
     border-radius: 10px;
     padding: 2px;
     display: inline-block;
@@ -150,21 +152,29 @@ section.section_index
 
 /* Footer */
 
+/* Le footer, une section réservée au placement en base de page */
+
 footer
 {
     width: 100%;
     height: 250px;
-    background-color: grey;
-    border-top: 0.2vw solid black;
+    background-color: #b0a38d;
+    border-top: 0.2vw solid #666666;
     margin-top: 50px;
     clear: both;
-    text-align: center;
     font-size: 50px;
     /* transform: translateX(0); */
 }
 footer a
 {
+    text-align: center;
     margin: 100px;
+}
+footer p
+{
+    margin: 50px;
+    text-align: center;
+    margin: auto;
 }
 
 /* footer a:hover */
@@ -183,6 +193,7 @@ header
     position: sticky;
     top: 0px;
     z-index: 10;
+    /* box-shadow: 3px 3px #666666; */
 }
 header ul li
 {
@@ -194,23 +205,23 @@ header ul li
 header a
 {
     font-size: 1.5vw;
-    border: 0.2vw solid black;
-    border-right: 0.075vw solid black;
-    border-left: 0.075vw solid black;
+    border: 0.2vw solid #666666;
+    border-right: 0.075vw solid #666666;
+    border-left: 0.075vw solid #666666;
     display: block;
     position: relative;
     text-decoration: none;
     padding: 8px 5px;
 
-    background-color: grey;
-    color: black;
+    background-color: #D2C1A5;
+    color: #212121;
     transition: background-color 0.5s;
 }
 
 ul.sub_burger
 {
     display: none;
-    background-color: grey;
+    background-color: #D2C1A5;
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -218,12 +229,13 @@ ul.sub_burger
 ul.sub_burger a
 {
     font-size: 1.25vw;
-    border: 0.2vw solid black;
+    border: 0.2vw solid #666666;
     padding: 10px;
     border-top: none;
+    box-shadow: 3px 3px #666666;
 
-    background-color: grey;
-    color: black;
+    background-color: #D2C1A5;
+    color: #212121;
 }
 ul.sub_burger li
 {
@@ -234,7 +246,7 @@ ul.sub_burger li
 
 header a:hover
 {
-    background-color: black;
+    background-color: #008080;
     color: lightgrey;
 }
 header > ul li:hover ul.sub_burger
