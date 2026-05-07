@@ -125,32 +125,6 @@ section.section_index
     height: 1000px;
 }
 
-/* div.test2
-{
-    position: relative;
-    background-color: blue;
-    width: 1000px;
-    height: 1000px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 999;
-}
-
-div.test
-{
-    position: absolute;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 1000;
-} */
-
 /* Footer */
 
 /* Section réservée au placement en bas de page */
@@ -162,27 +136,32 @@ footer
     background-color: #b0a38d;
     border-top: 0.2vw solid #666666;
     margin-top: 50px;
-    clear: both;
     font-size: 50px;
-    /* transform: translateX(0); */
-}
-footer a
-{
-    text-align: center;
-    margin: 100px;
+    /* clear: both; */
 }
 footer p
 {
-    margin: 50px;
+    margin-top: 50px;
     text-align: center;
-    margin: auto;
 }
-
-/* footer a:hover */
-/* { */
-    /* transform: translateX(10); */
-    /* transition: transform 0.5s ; */
-/* } */
+footer a
+{
+    font-size: 30px;
+    transition: font-size 0.2s;
+}
+footer p.prev_next
+{
+    margin-top: 100px;
+}
+footer a:hover
+{
+    font-size: 35px;
+    color: #008080;  
+}
+footer p a:nth-child(2)
+{
+   font-size: 40px;
+}
 
 /* Header/Hamburger Menu */
 
@@ -196,7 +175,6 @@ header
     position: sticky;
     top: 0px;
     z-index: 10;
-    /* box-shadow: 3px 3px #666666; */
 }
 header ul li
 {
@@ -272,11 +250,12 @@ li.burger > a::after
 
 /* Accueil */
 
-h2.welcome
+h2.welcome1
 {
 	margin-top: 120px;
     font-size: 125px;
     text-align: center;
+    text-decoration: none;
 
     animation: bounce-in-right 2s forwards, pretty-text 3s;
 }
@@ -287,6 +266,7 @@ h2.welcome2
     text-align: center;
     font-weight: bold;
     opacity: 0;
+    text-decoration: none;
 
     animation: bounce-in-left 2s forwards, pretty-text 3s;
     animation-delay: 1s;
@@ -294,11 +274,12 @@ h2.welcome2
 
 p.p_fade
 {
+    text-align: center;
     padding: 10px;
     width: 50%;
     margin-top: 60px;
 }
-p.pf1
+p.p_fade1
 {
     float: left;
 
@@ -307,20 +288,30 @@ p.pf1
     clear: both;
 }
 
-p.pf2
+p.p_fade2
 {
     float: right;
+    width: 650px;
 
     animation: fade-in2 forwards;
     animation-timeline: scroll(y);
     clear: both;
 }
 
-p.pf3
+p.p_fade3
 {
     float: left;
 
     animation: fade-in3 forwards;
+    animation-timeline: scroll(y);
+    clear: both;
+}
+
+p.p_fade4
+{
+    float: left;
+
+    animation: fade-in4 forwards;
     animation-timeline: scroll(y);
     clear: both;
 }
@@ -370,9 +361,7 @@ ul.competences_list li
     border-radius: 30px;
     box-shadow: 3px 3px #666666;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    transition: background-color 0.2s;
 }
 ul.competences_list li p
 {
@@ -395,7 +384,7 @@ ul.competences_list li:hover p
 ul.competences_list li img
 {
     width: 45%;
-    vertical-align: middle;
+    margin: 25px;
 }
 ul.competences_list :nth-child(3) p
 {
@@ -522,7 +511,16 @@ div.bg3 p
 
 div.articles iframe
 {
-    box-shadow: 5px 5px #666666;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    box-shadow: 6px 6px #666666;
+}
+
+div.articles p
+{
+    font-weight: bold;
 }
 
 ul.tools_list
