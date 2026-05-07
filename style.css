@@ -1,32 +1,6 @@
 /* General/Default */
 
-/* Contient L'ensemble des selecteurs usuels et/ou par défaut ne se rapportant à aucune section spécifique */
-
-/* div.test2
-{
-    position: relative;
-    background-color: blue;
-    width: 1000px;
-    height: 1000px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 999;
-}
-
-div.test
-{
-    position: absolute;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 1000;
-} */
+/* Selecteurs usuels et/ou par défaut ne se rapportant à aucune section spécifique */
 
 *
 {
@@ -73,6 +47,7 @@ h2
 {
     font-size: 30px;
     text-align: justify;
+    text-decoration: underline;
 }
 h3
 {
@@ -150,9 +125,35 @@ section.section_index
     height: 1000px;
 }
 
+/* div.test2
+{
+    position: relative;
+    background-color: blue;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+div.test
+{
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1000;
+} */
+
 /* Footer */
 
-/* Le footer, une section réservée au placement en base de page */
+/* Section réservée au placement en bas de page */
 
 footer
 {
@@ -184,6 +185,8 @@ footer p
 /* } */
 
 /* Header/Hamburger Menu */
+
+/* Menu divisés par onglets horizontalement + Menu déroulant */
 
 header
 {
@@ -252,8 +255,8 @@ header a:hover
 header > ul li:hover ul.sub_burger
 {
     display: block;
-    /* transition: background-color 0.25s; */
     animation: burger-fade 0.25s forwards;
+    /* transition: background-color 0.25s; */
 }
 header ul::after
 {
@@ -289,11 +292,14 @@ h2.welcome2
     animation-delay: 1s;
 }
 
-p.p1
+p.p_fade
 {
     padding: 10px;
-    width: 40%;
-    margin-top: 100px;
+    width: 50%;
+    margin-top: 60px;
+}
+p.pf1
+{
     float: left;
 
     animation: fade-in forwards;
@@ -301,11 +307,8 @@ p.p1
     clear: both;
 }
 
-p.p2
+p.pf2
 {
-    padding: 10px;
-    width: 40%;
-    margin-top: 100px;
     float: right;
 
     animation: fade-in2 forwards;
@@ -313,6 +316,14 @@ p.p2
     clear: both;
 }
 
+p.pf3
+{
+    float: left;
+
+    animation: fade-in3 forwards;
+    animation-timeline: scroll(y);
+    clear: both;
+}
 
 /* Profil */
 
@@ -343,25 +354,27 @@ div.chrono
     padding-left: 10px;
 }
 
-ul.comp
+ul.competences_list
 {
-    height: 120px;
+    height: 175px;
+    width: 1400px;
 }
-ul.comp li
+ul.competences_list li
 {
     float: left;
-    border: 0.2vw solid black;
     background-color: lightslategrey;
-    border-radius: 10px;
     width: 160px;
     height: 160px;
     margin: 10px;
+    border: 0.2vw solid black;
+    border-radius: 30px;
+    box-shadow: 3px 3px #666666;
 
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
-ul.comp li p
+ul.competences_list li p
 {
     border-radius: 10px 10px 0 0;
     text-align: center;
@@ -370,75 +383,88 @@ ul.comp li p
     border-bottom: 0.2vw solid black;
     background-color: transparent;
 }
-ul.comp li:hover
+ul.competences_list li:hover
 {
     background-color: black;
 }
 
-ul.comp li:hover p
+ul.competences_list li:hover p
 {
     color: lightgrey;
 }
-ul.comp li img
+ul.competences_list li img
 {
     width: 45%;
     vertical-align: middle;
 }
-ul.comp :nth-child(3) p
+ul.competences_list :nth-child(3) p
 {
     font-size: 15px;
     padding: 2.5px;
 }
-ul.comp :nth-child(3) img[src="../images/sh.png"]
+ul.competences_list :nth-child(3) img[src="../images/sh.png"]
 {
     margin: 5px 0px 5px 5px;
     float: left;
 }
-ul.comp :nth-child(3) img[src="../images/posh.png"]
+ul.competences_list :nth-child(3) img[src="../images/posh.png"]
 {
     width: 42%;
     margin: 7px 8px 5px 0px;
     float: right;
 }
-ul.comp :nth-child(4) img
+ul.competences_list :nth-child(4) img
 {
     margin-top: 8px;
 }
-ul.comp :nth-child(5) img[src="../images/html.png"]
+ul.competences_list :nth-child(5) img[src="../images/html.png"]
 {
     width: 50%;
     margin: 0;
     float: left;
 }
-ul.comp :nth-child(5) img[src="../images/css.png"]
+ul.competences_list :nth-child(5) img[src="../images/css.png"]
 {
     margin: 5px 5px 5px 0px;
     float: right;
 }
-ul.comp :nth-child(6) img
+ul.competences_list :nth-child(6) img
 {
     width: 60%;
     margin: 2px 29px;
     margin-top: 8px;
 }
-h3#os + ul.comp
+h3.competences_title
+{
+    margin-top: 50px;
+}
+h3.comp_title_first
+{
+    margin-top: 0;
+}
+ul.comp_list_os
+{
+    width: 1200px;
+}
+h3.os_title + ul.competences_list
 {
     float: left;
     width: 350px;
     margin-bottom: 25px;
 }
-h3#os + ul.comp li
+h3.os_title + ul.competences_list li
 {
     width: 140px;
 }
-h3#os + ul.comp li img[src="../images/windows.png"]
+h3.os_title + ul.competences_list li img[src="../images/windows.png"]
 {
     width: 50%;
     margin-left: 36px;
 }
 p.os
 {
-    float: left
+    margin-top: 45px;
+    float: left;
 }
 p.p3
 {
@@ -492,56 +518,62 @@ div.bg3 p
     margin: 20px 10px 0px 10px
 }
 
-/* Autres */
+/* Veille */
 
-ul.tool
+div.articles iframe
 {
-    width: 75%;
-    height: 150px;
+    box-shadow: 5px 5px #666666;
+}
+
+ul.tools_list
+{
+    width: 1100;
+    height: 200px;
     margin-bottom: 50px;
 }
-ul.tool li
+ul.tools_list li
 {
     float: left;
-    border: 0.2vw solid black;
     background-color: lightslategrey;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
+    border: 0.2vw solid black;
+    border-radius: 30px;
+    box-shadow: 3px 3px #666666;
 }
-ul.tool li p
+ul.tools_list li p
 {
-    border-radius: 10px 10px 0 0;
     text-align: center;
     margin: 0;
     font-size: 20px;
+    border-radius: 30px 30px 0 0;
     border-bottom: 0.2vw solid black;
 }
 
-ul.tool li:hover
+ul.tools_list li:hover
 {
     background-color: black;
 }
-ul.tool li:hover p
+ul.tools_list li:hover p
 {
     color: lightgrey;
     background-color: black;
 }
 
-ul.tool li img
+ul.tools_list li img
 {
     width: 60%;
     margin: 5px 32px;
 }
 
-ul.tool :nth-child(3) p
+ul.tools_list :nth-child(3) p
 {
     font-size: 18px;
     padding: 2.5px;
 }
 
-ul.tool :nth-child(4) p
+ul.tools_list :nth-child(4) p
 {
     padding: 11px;
 }
@@ -605,6 +637,8 @@ span.emoji
 }
 
 /* Keyframes/Animations */
+
+/* Éléments graphiques animés et mobiles */
 
 @keyframes burger-fade
 {
@@ -784,11 +818,35 @@ span.emoji
     {
         opacity: 0;
     }
-    75%
+    60%
     {
         opacity: 0.4;
     }
     90%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in3
+{
+    0%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.65;
+    }
+    95%
+    {
+        opacity: 0.8;
+    }
+    100%
     {
         opacity: 1;
     }
