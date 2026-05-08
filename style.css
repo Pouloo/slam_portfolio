@@ -15,10 +15,11 @@ body
     background-color: #E6D5B8;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    /* background-image: url(data:image/png;base64,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); */
 }
 section
 {
-    width: 1200px;
+    width: 1500px;
     height: 100%;
     margin: 0px auto;
 }
@@ -71,7 +72,8 @@ ul
 
 body *
 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 h2, h3
 {
@@ -112,6 +114,13 @@ span.comment
 
     transform-origin: top center;
     animation: shake 2s infinite;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+span.comment:hover
+{
+    background-color: #008080;
+    color: white;
 }
 
 div.sub_bg
@@ -125,6 +134,14 @@ section.section_index
     height: 1000px;
 }
 
+section.section_index div img
+{
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+}
+
 /* Footer */
 
 /* Section réservée au placement en bas de page */
@@ -132,35 +149,61 @@ section.section_index
 footer
 {
     width: 100%;
-    height: 250px;
+    height: 100px;
     background-color: #b0a38d;
     border-top: 0.2vw solid #666666;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 50px;
     /* clear: both; */
 }
+footer div.f_wrapper
+{
+    /* margin-top: 50px; */
+}
 footer p
 {
-    margin-top: 50px;
+    margin: 0px;
     text-align: center;
 }
-footer a
+footer p a.mentions
+{
+    transition: color 0.2s, font-size 0.2s;
+}
+footer p a.mentions:hover
+{
+    color: #008080;
+    font-size: large;
+}
+footer p.prev_next a
 {
     font-size: 30px;
     transition: font-size 0.2s;
 }
 footer p.prev_next
 {
-    margin-top: 100px;
+    margin-top: 10px;
 }
-footer a:hover
+footer p.prev_next a:hover
 {
     font-size: 35px;
     color: #008080;  
 }
-footer p a:nth-child(2)
+
+footer img
 {
-   font-size: 40px;
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+
+    transition: width 0.2s, height 0.2s;;
+}
+
+footer img:hover
+{
+    width: 55px;
+    height: 55px;
+    float: right;
+    margin-right: 20px;
 }
 
 /* Header/Hamburger Menu */
@@ -339,117 +382,47 @@ p.p3
     width: 65%;
 }
 
-div.chrono
+div.timeline
 {
     border-left: 3px solid rgb(0, 0, 0);
     padding-left: 10px;
 }
 
-ul.competences_list
+div.competences
 {
-    height: 175px;
-    width: 1400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* width: 80%; */
+    /* margin: auto; */
 }
-ul.competences_list li
+div.competences div
 {
-    float: left;
-    background-color: lightslategrey;
-    width: 160px;
-    height: 160px;
-    margin: 10px;
-    border: 0.2vw solid black;
-    border-radius: 30px;
-    box-shadow: 3px 3px #666666;
+    margin: 0 30px 30px 0;
+    width: 300px;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #666666;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, width 0.2s, height 0.2s;;
 }
-ul.competences_list li p
+div.competences div p
 {
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
-    border-bottom: 0.2vw solid black;
-    background-color: transparent;
+    transition: color 0.2s;
 }
-ul.competences_list li:hover
+div.competences div:hover
 {
-    background-color: black;
+    background-color: #008080;
+    width: 310px;
+    height: 260px;
 }
-
-ul.competences_list li:hover p
+div.competences div:hover p
 {
     color: lightgrey;
 }
-ul.competences_list li img
-{
-    width: 45%;
-    margin: 25px;
-}
-ul.competences_list :nth-child(3) p
-{
-    font-size: 15px;
-    padding: 2.5px;
-}
-ul.competences_list :nth-child(3) img[src="../images/sh.png"]
-{
-    margin: 5px 0px 5px 5px;
-    float: left;
-}
-ul.competences_list :nth-child(3) img[src="../images/posh.png"]
-{
-    width: 42%;
-    margin: 7px 8px 5px 0px;
-    float: right;
-}
-ul.competences_list :nth-child(4) img
-{
-    margin-top: 8px;
-}
-ul.competences_list :nth-child(5) img[src="../images/html.png"]
-{
-    width: 50%;
-    margin: 0;
-    float: left;
-}
-ul.competences_list :nth-child(5) img[src="../images/css.png"]
-{
-    margin: 5px 5px 5px 0px;
-    float: right;
-}
-ul.competences_list :nth-child(6) img
-{
-    width: 60%;
-    margin: 2px 29px;
-    margin-top: 8px;
-}
-h3.competences_title
-{
-    margin-top: 50px;
-}
-h3.comp_title_first
-{
-    margin-top: 0;
-}
-ul.comp_list_os
-{
-    width: 1200px;
-}
-h3.os_title + ul.competences_list
-{
-    float: left;
-    width: 350px;
-    margin-bottom: 25px;
-}
-h3.os_title + ul.competences_list li
-{
-    width: 140px;
-}
-h3.os_title + ul.competences_list li img[src="../images/windows.png"]
-{
-    width: 50%;
-    margin-left: 36px;
-}
+
 p.os
 {
     margin-top: 45px;
@@ -509,18 +482,90 @@ div.bg3 p
 
 /* Veille */
 
-div.articles iframe
+div.articles
 {
-    width: 1000px;
-    height: 500px;
-    border: 2px solid black;
-    margin-bottom: 50px;
-    box-shadow: 6px 6px #666666;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-auto-flow: column; */
 }
 
-div.articles p
+div.articles a
 {
+    width: 500px;
+    height: 400px;
+    margin: 30px 30px 0 0;
+}
+
+div.articles a > div
+{
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+    
+    /* border-radius: 15px; */
+    transition: box-shadow 0.2s, width 0.2s, height 0.2s;
+}
+
+div.articles a > div > div:nth-child(1)
+{
+    width: 100%;
+    height: 70%;
+
+    /* border-radius: 15px 15px 0 0; */
+    border-bottom: 3px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.articles a > div > div:nth-child(2)
+{
+    width: 100%;
+    height: 29.25%;
+
+    /* border-bottom: 3px solid black; */
+    /* border-radius: 0 0 15px 15px; */
+    background-color: #b0a38d;
+}
+
+div.articles a > div > div.category1
+{
+    background-color: #b0a38d;
+}
+div.articles a > div > div.category2
+{
+    background-color: #00cd9d;
+}
+div.articles a > div > div.category3
+{
+    background-color: #ff2f00;
+}
+
+div.articles a > div:has(> div.category1)
+{
+    color: #b0a38d;
+}
+div.articles a > div:has(> div.category2)
+{
+    color: #00cd9d;
+}
+div.articles a > div:has(> div.category3)
+{
+    color: #ff2f00;
+}
+
+div.articles a p
+{
+    margin: 0;
+    padding: 20px 0 20px 20px;
     font-weight: bold;
+    font-size: 18px;
+}
+
+div.articles a > div:hover
+{
+    width: 101%;
+    height: 101%;
+    box-shadow: 10px 10px;
 }
 
 ul.tools_list
