@@ -2,37 +2,26 @@
 <html lang="fr">
     <head>
         <link href="style.css" rel="stylesheet">
-        <meta charset="UTF→8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./images/favicon_black.png">
         <title>Portfolio</title>
     </head>
     <body>
         <header>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li class="burger">
-                    <a href="pages/profil.html">Profil &ensp;</a>
-                    <ul class="sub_burger">
-                        <li><a href="pages/profil.html#propos">À Propos de moi</a></li>
-                        <li><a href="pages/profil.html#experience">Mon Experience Pro.</a></li>
-                        <li><a href="pages/profil.html#projet">Mon Projet Pro.</a></li>
-                        <li><a href="pages/profil.html#competences">Mes Compétences</a></li>
-                    </ul>
+                <li><a href="index.html" class="current">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="pages/parcours.html">Parcours &ensp;</a>                    
                 </li>
-                <li class="burger">
-                    <a href="pages/formation.html">Formation &ensp;</a>
-                    <ul class="sub_burger">
-                        <li><a href="pages/formation.html#sio">BTS SIO</a></li>
-                        <li><a href="pages/formation.html#e5">E5</a></li>
-                        <li><a href="pages/formation.html#e6">E6</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <a href="pages/e5.html">E5 &ensp;</a>
                 </li>
-                <li class="burger">
-                    <a href="pages/veille.html">Autres Infos. &ensp;</a>
-                    <ul class="sub_burger">
-                        <li><a href="pages/veille.html#veille">Veille</a></li>
-                        <li><a href="pages/veille.html#contact">Contact</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <a href="pages/e6.html">E6 &ensp;</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/veille.html">Veille &ensp;</a>
                 </li>
             </ul>
         </header>
@@ -41,35 +30,12 @@
         
         <section class="section_index">
             <div><img src="images/portrait1.jpg"></div>
-            <!-- <h2 class="welcome1">Bienvenue</h2>
-            <h2 class="welcome2">sur mon Portfolio.</h2>
-            <p class="p_fade p_fade1">
-                Ce site a pour objectif de vous présenter les compétences et expériences
-                professionnelles que j'ai pu acquérir durant mes deux années de formation en <b>BTS
-                SIO</b> Option <b>SLAM</b> en alternance.
-            </p>
-            <p class="p_fade p_fade2">
-                Vous trouverez également les réalisations professionnelles présentées lors des
-                épreuves de <b>E4</b> et <b>E5</b> du BTS SIO Service Informatiques aux Organisations Option
-                SLAM (Solutions Logicielles et Application Métiers) ainsi que la veille
-                technologique/juridique effectuée dans ce domaine…
-            </p>
-            <p class="p_fade p_fade3">
-                Enfin, il s'agit en nature d'un exercice de développement d'une ressource web statique
-                dont vous pouvez apprécier les visuels, designs et animations. Tout le code source est
-                disponible sur un répertoire <i>Github</i> publique.
-            </p> -->
         </section>
         <footer>
             <div class="f_wrapper">
-                <p>Paul SICOLI – Tous Droits Réservés – 2026 – <a href="pages/mentions.html" class="mentions">Mentions Légales</a> – <a href="pages/plan.html" class="mentions">Plan de Site</a> – <a href="mailto: p.sicoli@outlook.com" class="mentions">Me Contacter</a></p>
+                <p>Paul SICOLI – Tous Droits Réservés – 2026 – <a href="pages/annexes/mentions.html" class="mentions">Mentions Légales</a> – <a href="pages/annexes/plan.html" class="mentions">Plan de Site</a> – <a href="mailto: p.sicoli@outlook.com?subject=Contact%20depuis%20le%20Portfolio" class="mentions">Me Contacter</a></p>
                 <!-- <a target="_blank" href="https://github.com/Pouloo"><img src="images/github.png"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/psicoli/"><img src="images/linkedin.png"></a> -->
-                <p class="prev_next">
-                    <a href="">◄ Précédent</a>
-                    <a>|</a>
-                    <a href=""> Suivant ►</a>
-                </p>
             </div>
         </footer>
     </body>
