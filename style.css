@@ -506,12 +506,12 @@ div.projets a
     margin: 30px 30px 0 0;
 }
 
-div.parts a
+/* div.parts a
 {
     width: 400px;
     height: 200px;
     margin: 30px 30px 0 0;
-}
+} */
 
 div.projets a > div
 {
@@ -576,9 +576,10 @@ div.projets a > div:has(> div.category3)
 div.projets a p
 {
     margin: 0;
-    padding: 20px 0 20px 20px;
+    padding: 20px 20px 20px 20px;
     font-weight: normal;
     font-size: 18px;
+    text-align: left;
     color: white;
 }
 
@@ -587,6 +588,32 @@ div.projets a > div:hover
     width: 101%;
     height: 101%;
     box-shadow: 10px 10px;
+}
+
+div.band a
+{
+    width: 500px;
+    height: 110px;
+    /* margin: 30px 30px 0 0; */
+}
+
+div.band a > div
+{
+    border-radius: 15px;
+}
+
+div.band a > div:hover
+{
+    box-shadow: 5px 5px;
+    /* width: 502px;
+    height: 112px; */
+}
+
+div.band a > div > div:nth-child(1)
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 div.illustrations
@@ -689,6 +716,7 @@ div.realisations a p
     font-weight: normal;
     font-size: 18px;
     color: white;
+    text-align: left;
 }
 
 div.realisations span.e5
@@ -805,6 +833,7 @@ div.articles a p
     font-weight: normal;
     font-size: 18px;
     color: white;
+    text-align: left;
 }
 
 div.articles a > div:hover
@@ -872,10 +901,9 @@ span.emoji
     font-size: 40px;
 }
 
-span.source
+span.source , span.title
 {
     text-transform: uppercase;
-    text-decoration: it;
     font-weight: bold;
     font-style: italic;
 }
