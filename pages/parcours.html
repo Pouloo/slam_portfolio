@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../style.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="../images/favicon_red.png">
-        <title>Portfolio\Profil</title>
+        <title>Portfolio\Parcours</title>
     </head>
     <body>
         <header>
@@ -25,34 +25,19 @@
                 </li>
             </ul>
         </header>
-		<h1>Profil</h1>
-        <section>
-            <iframe src="../ressources/cv.pdf#toolbar=0&navpanes=0" frameborder="0" style="margin-top: 50px; width: 500px; height: 690px;"></iframe>
-			<h2 id="propos">À Propos de moi</h2>
+		<h1>Parcours</h1>
+        <section class="parcours">
+            <!-- <iframe src="../ressources/cv.pdf#toolbar=0&navpanes=0" frameborder="0" style="margin-top: 50px; width: 500px; height: 690px;"></iframe> -->
+            <h2 id="propos">À Propos de moi</h2>
 			<p class="p3">
 				<br>Bonjour, je m'appelle <i>Paul SICOLI</i>,<br><br>je suis étudiant en première année d'informatique en BTS SIO (Brevet de Technicien Supérieur: Services Informatique aux Organisations) option SLAM (Solutions Logicielles et Application Métier), actuellement au lycée <i>Saint-Francois Des Sales</i> à <i>Alençon</i>.<br><br>Dans cette section je vous présenterais mon parcours scolaire, professionnel, mes experiences et les compétences que j'ai su en tirer.
 			</p>
-            <div class="bg1"><img src="../images/user.png" width="100%"></div>
-            <h2 id="experience">Mon Experience Professionnelle</h2>
-            <div class="timeline">
-                <p>
-                    • <span class="comment">&lt; (2020-2023)</span> MODDING/CRÉATION D'ADDONS<br><br>&emsp;&emsp;- Gestion de versions et maintenance du code<br><br>&emsp;&emsp;- Documentation et mise à jour des changelogs<br><br>&emsp;&emsp;- Feedback utilisateur & déploiement de patchs correctifs<br><br>&emsp;&emsp;- Notions sur Blender, Unreal Engine et langage de programmation LUA
-                </p>
-                <p>
-                    • <span class="comment">&lt; (2023-2024)</span> ÉTUDES EN INFORMATIQUE : ÉCOLE 42 LE HAVRE<br><br>&emsp;&emsp;- C: Programmation en langage C (Librairie Standard LibC)<br><br>&emsp;&emsp;- SSH: Configuration et usage de protocoles de communication interserveur<br><br>&emsp;&emsp;- SUDO/UFW: Configuration de politiques de sécurité strictes sur systèmes UNIX<br><br>&emsp;&emsp;- SHELL: Utilisation d'une interface en ligne de commande, scripts en BASH<br><br>&emsp;&emsp;- PROJETS:<br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ libft \ Reproduction de l'intégralité de la <i>libc</i><br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ ft_printf \ Reproduction de la fonction C <i>printf</i><br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ minitalk \ Protocole de communication par signaux UNIX
-                </p>
-                <p>
-                    • <span class="comment">&lt; (2024-2026)</span> ÉTUDES EN INFORMATIQUE : BTS SIO<br><br>&emsp;&emsp;- PROGRAMMATION: Paradigmes de programmation (Fonctionelle et Orientée Objet)<br><br>&emsp;&emsp;- CODAGE: Fondamentaux du langage de programmation Python & PHP<br><br>&emsp;&emsp;- VIRTUALISATION: Machines virtuelles sur VirtualBox et VMware<br><br>&emsp;&emsp;- GLPI: Mise en service, émission et gestion de tickets helpdesk<br><br>&emsp;&emsp;- DROIT: Droit informatique et cyberéthique (CNIL, RGPD, EBIOS)<br><br>&emsp;&emsp;- PROJETS:<br><br>&emsp;&emsp;&emsp;&emsp; ‣ Python \ Jeu Du Pendu en ligne de commande<br><br>&emsp;&emsp;&emsp;&emsp; ‣ HTML/CSS \ Site d'agence de tourisme "Travel Agency"
-                </p>
-            </div>
-
-            <h2 id="projet">Mon Projet Pro.</h2>
+            <a class="cv" target="_blank" href="../ressources/cv.pdf"><img src="../images/cv.jpg"></a>
             <p>
                 J'ai fait le choix de la formation de BTS SIO afin de développer/consolider mes compétences en informatique, et d'aquérir de l'expérience dans un cadre scolaire traditionnel.<br><br>En effet, mon précédant lieu d'études m'a beaucoup instruit et m'a fait maitriser bien des bases sur la programmation, or, sachant que sa pédagogie est spécialisée dans l'apprentissage mutuel entre élèves, souhaitant revenir à un apprentissage plus encadré, j'ai fait le choix de m'orienter vers ce BTS, un diplôme notamment centré selon moi sur l'expérience et le travail en mode projet qui sont deux caractéristiques qui me sont particulièrement utiles pour mon avenir professionnel.
             </p>
-
-            <h2 id="competences">Mes Compétences</h2>
-            <h3 class="competences_title comp_title_first">Langages de Programmation/Scriptage/Balisage</h3>
+            <h2 id="competences">Compétences Techniques</h2>
+            <!-- <h3 class="competences_title comp_title_first">Langages de Programmation/Scriptage/Balisage</h3> -->
             <div class="competences">
                 <div>
                     <div style="background-image: url('../images/c.png');"></div>
@@ -79,8 +64,23 @@
                     <div style="background-image: url('../images/sql.png');"></div>
                 </div>
             </div>
-            <h3 class="competences_title">Systèmes d'exploitation</h3>
-            <div class="competences">
+            <h2>Chronologie</h2>
+            <div class="timeline">
+                <div class="timeline_entry">
+                    <p>• <span class="comment">&lt; (2020-2023)</span> MODDING/CRÉATION D'ADDONS<br><br>&emsp;&emsp;- Gestion de versions et maintenance du code<br><br>&emsp;&emsp;- Documentation et mise à jour des changelogs<br><br>&emsp;&emsp;- Feedback utilisateur & déploiement de patchs correctifs<br><br>&emsp;&emsp;- Notions sur Blender, Unreal Engine et langage de programmation LUA</p>
+                    <img src="../images/timeline1.png">
+                </div>
+                <div class="timeline_entry">
+                    <p>• <span class="comment">&lt; (2023-2024)</span> ÉTUDES EN INFORMATIQUE : ÉCOLE 42 LE HAVRE<br><br>&emsp;&emsp;- C: Programmation en langage C (Librairie Standard LibC)<br><br>&emsp;&emsp;- SSH: Configuration et usage de protocoles de communication interserveur<br><br>&emsp;&emsp;- SUDO/UFW: Configuration de politiques de sécurité strictes sur systèmes UNIX<br><br>&emsp;&emsp;- SHELL: Utilisation d'une interface en ligne de commande, scripts en BASH<br><br>&emsp;&emsp;- PROJETS:<br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ libft \ Reproduction de l'intégralité de la <i>libc</i><br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ ft_printf \ Reproduction de la fonction C <i>printf</i><br><br>&emsp;&emsp;&emsp;&emsp; ‣ C \ minitalk \ Protocole de communication par signaux UNIX</p>
+                    <img src="../images/timeline2.png" style="padding-top: 75px;">
+                </div>
+                <div class="timeline_entry">
+                    <p>• <span class="comment">&lt; (2024-2026)</span> ÉTUDES EN INFORMATIQUE : BTS SIO<br><br>&emsp;&emsp;- PROGRAMMATION: Paradigmes de programmation (Fonctionelle et Orientée Objet)<br><br>&emsp;&emsp;- CODAGE: Fondamentaux du langage de programmation Python & PHP<br><br>&emsp;&emsp;- VIRTUALISATION: Machines virtuelles sur VirtualBox et VMware<br><br>&emsp;&emsp;- GLPI: Mise en service, émission et gestion de tickets helpdesk<br><br>&emsp;&emsp;- DROIT: Droit informatique et cyberéthique (CNIL, RGPD, EBIOS)<br><br>&emsp;&emsp;- PROJETS:<br><br>&emsp;&emsp;&emsp;&emsp; ‣ Python \ Jeu Du Pendu en ligne de commande<br><br>&emsp;&emsp;&emsp;&emsp; ‣ HTML/CSS \ Site d'agence de tourisme "Travel Agency"</p>
+                    <img src="../images/timeline3.jpeg">
+                </div>
+            </div>
+            <!-- <h3 class="competences_title">Systèmes d'exploitation</h3> -->
+            <!-- <div class="competences">
                 <div>
                     <div style="background-image: url('../images/windows.png');">
                     </div>
@@ -93,7 +93,7 @@
                     <div style="background-image: url('../images/linux_tux.png');">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="competences_list comp_list_os">
                 <div>
                     <p>Windows</p>
@@ -111,8 +111,8 @@
                     => <b>Windows:</b> 10, 11, Windows Server<br><br>=> <b>MacOS:</b> 14 <i>Sonoma</i>, 15 <i>Sequoia</i> <br><br>=> <b>Linux:</b> <i>Debian</i> 11/12, <i>Ubuntu</i> 22.04, <i>Kali</i>, RPI OS
                 </p>
             </div> -->
-            <h3 class="competences_title">Mes Compétences Transversales</h3>
-            <p class="p3">
+            <!-- <h3 class="competences_title">Mes Compétences Transversales</h3> -->
+            <!-- <p class="p3">
                 &emsp;• Rigoureux<br><br>
                 &emsp;• Enthousiaste<br><br>
                 &emsp;• Méticuleux<br><br>
@@ -121,25 +121,25 @@
                 &emsp;• Inventif<br><br>
                 &emsp;• Motivé<br><br>
                 &emsp;• Pédagogue<br><br>
-            </p>
+            </p> -->
             <h2 id="sio">Brevet de Technicien Supérieur: Service Informatique aux Organisations (BTS SIO)</h2>
             <p>
                 Le diplôme de BTS SIO est une formation d'études supérieures <b>(BAC +2)</b> relevant de plusieurs domaines d'activités et de blocs de compétences dont la ligne directrice est l'informatique au sens général, et son implémentation dans un contexte professionnel. En outre, le BTS SIO est un diplôme polyvalent qui permet autant de s'insérer sur le marché du travail que de déboucher sur une continuation de ses études. <br><br>En effet, en tant qu'étudiant en première année de ce BTS, nous nous concentrons principalement sur un programme de tronc commun incluant autant la <b>virtualisation</b>, la <b>gestion de tickets</b>, la <b>configuration de systèmes</b> et d'autres pratiques de technique informatique que des bases utiles au développement tel que l'<b>algorithmique</b> et les <b>structures de données</b>, en passant par des concepts mathématiques utiles à la culture informatique à titre général. Ces savoirs relèvent essentiellement du Bloc de compétences N<sup>o</sup>1: <i>"Support et Mise à Disposition de Services Informatiques"</i>. Or c'est la deuxième année que la spécialisation joue un rôle accru, il sera question de deux spécialités (dont le choix est fait en première année):
             </p>
 
-            <h3>Solutions Logicielles et Application Métier (SLAM) <span class="comment">← Mon Choix&nbsp;</span></h3>
-            <p class="p3">
-                Il s'agit de la spécialité de <b>Développement</b> du diplôme, touchant au développement web et logiciel, impliquant des compétencs en bases de données, en algorithmique et la maitrise des syntaxes des différents languages de programmation spécialisés. Y serons vues les activités et savoirs suivants:<br><br>• La conception et le développement de solutions applicatives<br><br>• La maintenance corrective et/ou évolutive des solutions applicatives<br><br>• La gestion de données
-            </p>
-            <div class="illustrations">
-                <div style="background-image: url('../images/server.png');"></div>
-                <div style="background-image: url('../images/exe.png');"></div>
-            </div>
-
             <h3>Solutions d'Infrastructure, Systèmes et Réseaux (SISR)</h2>
             <p class="p3">
                 Il s'agit de la spécialité de <b>Technicien Informatique</b> du diplôme, dont la configuration de systèmes de fichiers et/ou de pare-feux, et la navigation en ligne de commande sont des compétences de base essentielles entre bien d'autres. Y serons vues les activités et savoirs suivants:<br><br>• La conception de solutions d'infrastructures réseau<br><br>• L'installation, le test, et le déploiement des solutions d'infrastructures réseau<br><br>• L'exploitation, dépannage et supervision des solutions d'infrastructures réseau
             </p>
+            <h3>Solutions Logicielles et Application Métier (SLAM) <span class="comment">← Mon Choix&nbsp;</span></h3>
+            <p class="p3">
+                Il s'agit de la spécialité de <b>Développement</b> du diplôme, touchant au développement web et logiciel, impliquant des compétencs en bases de données, en algorithmique et la maitrise des syntaxes des différents languages de programmation spécialisés. Y serons vues les activités et savoirs suivants:<br><br>• La conception et le développement de solutions applicatives<br><br>• La maintenance corrective et/ou évolutive des solutions applicatives<br><br>• La gestion de données
+            </p>
+            <!-- <div class="illustrations">
+                <div style="background-image: url('../images/server.png');"></div>
+                <div style="background-image: url('../images/exe.png');"></div>
+            </div> -->
+            
         </section>
         <footer>
             <div>
