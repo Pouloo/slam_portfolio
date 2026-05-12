@@ -308,6 +308,11 @@ section.index div.intro
     height: 600px;
 }
 
+section.index h2:nth-child(1)
+{
+    margin-top: 50px;
+}
+
 section.index div.intro img
 {
     float: left;
@@ -320,7 +325,7 @@ section.index div.intro img
 
 section.index div.intro p
 {
-    margin: 60px 100px 50px 50px;
+    margin: 100px 100px 50px 50px;
     width: 650px;
     float: left;
 }
@@ -440,12 +445,23 @@ section.parcours > a.cv img
     transition: box-shadow 0.2s;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 60px;
     display: block;
 }
 
 section.parcours > a.cv img:hover
 {
     box-shadow: 0 0 50px 15px #B3CCCE;
+}
+
+section.parcours h2:nth-child(1)
+{
+    margin-top: 50px;
+}
+
+section.parcours h2:nth-child(2)
+{
+    margin-top: 50px;
 }
 
 h2#propos
@@ -480,8 +496,9 @@ div.timeline > div.timeline_entry > p
 div.timeline > div.timeline_entry > img
 {
     width: 350px;
-    /* margin-top: 50px; */
-    padding-top: 50px;
+    margin-top: 50px;
+    padding-top: 0px;
+    border-radius: 20px 20px 20px 20px;
 
     transition: rotate 0.2s;
 }
@@ -489,6 +506,7 @@ div.timeline > div.timeline_entry > img
 div.timeline > div.timeline_entry > img:hover
 {
     rotate: -2deg;
+    /* box-shadow: 0 0 50px 1px #008080; */
 }
 
 div.competences
@@ -548,6 +566,22 @@ p.os
 }
 
 /* E5 */
+
+section.e5
+{
+    margin-bottom: 25px;
+}
+
+section.e5 > p:nth-child(1)
+{
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+
+section.e5 > h2
+{
+    margin-bottom: 0;
+}
 
 p.p3
 {
@@ -701,6 +735,12 @@ section.e6
     margin-bottom: 50px;
 }
 
+section.e6 > p:nth-child(1)
+{
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+
 /* section.e6 > div
 {
     width: 40%;
@@ -803,6 +843,17 @@ div.realisations + span.e5:hover
 }
 
 /* Veille */
+
+section.veille
+{
+    margin-bottom: 25px;
+}
+
+section.veille> p:nth-child(1)
+{
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
 
 b.category1
 {
